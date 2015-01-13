@@ -27,32 +27,28 @@ header {
 .title-cont {
 }
 .title {
-	/*background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.24));*/
-	/*box-shadow: rgba(0, 0, 0, 0.67) 0 1px 3px 0;*/
-
-	height: 60px;
 }
 .title-inner {
 	max-width: 780px;
 	margin: 0 auto;
 }
-.nav-links, .nav-links a {
-	display: block;
-	float: left;
-}
 .nav-links {
 	font-weight: 200;
-	text-align: left;
+	text-align: center;
 
-	float: right;
 	padding: 0;
 	margin: 0;
 }
 .nav-links a {
 	font-size: 14px;
 
+	display: inline-block;
 	height: 42px;
 	padding: 11px 25px 0;
+}
+.nav-links .page-now-on {
+	border-bottom: 1px solid #121212;
+	box-shadow: #404040 0 1px 0 0;
 }
 .title h1 > a, .nav-links a:link, .nav-links a:visited, .nav-links a:hover, .nav-links a:active {
 	color: #FFF;
@@ -65,6 +61,7 @@ header {
 }
 .nav-links a:hover {
 	background: rgba(0, 0, 0, 0.24);
+	border: none;
 	box-shadow: rgba(0, 0, 0, 0.123) 0 1px 3px 0 inset;
 }
 header h1 {
@@ -72,6 +69,7 @@ header h1 {
 	font-weight: 300;
 	text-align: center;
 
+	display: none;
 	float: left;
 	padding: 4px 15px 0 0;
 	margin: 0;
@@ -118,6 +116,13 @@ section.align-center p {
 section.align-center ul {
 	max-width: 660px;
 	margin: 0 auto 1.5em;
+}
+section.align-center .name-list {
+	padding: 0;
+	margin: 1.5em auto;
+}
+section.align-center .name-list li {
+	display: block;
 }
 section p > code {
 	background: rgba(0, 0, 0, 0.12);
