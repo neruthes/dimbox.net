@@ -2,14 +2,52 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>BBS - 钉子粉丝团</title>
-	<base href="//dimbox.net/"></base>
+	<title>粉丝成员 — 钉子粉丝团</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <base href="//dimbox.net/"></base> -->
 	<link rel="stylesheet" type="text/css" href="/main.css">
 	<link rel="shortcut icon" href="/favicon.jpg">
 	<link rel="apple-touch-icon" href="/dimbox.png">
+	<script type="text/javascript">
+	var removeMuutLogo = function () {
+		window.setInterval(function(){
+			try {
+				document.getElementById('moot-logo').remove();
+			} catch (e) {
+				return undefined;
+			}
+		}, 30);
+	};
+	</script>
 </head>
 <body>
-	<a class="muut" href="https://muut.com/i/dimbox/comments" type="dynamic">如果你看到了这行文字，请点击<strong>这里</strong></a>
-	<script src="//cdn.muut.com/1/moot.zh.min.js"></script>
+	<header>
+		<div class="title-cont">
+			<nav class="title">
+				<div class="title-inner">
+					<h1><a href="./">钉子粉丝团</a></h1>
+					<div class="nav-links">
+						<a id="nav-link-to-home" href="/">首页</a><a class="page-now-on" id="nav-link-to-fans-list" href="/members.html">粉丝成员</a><a id="nav-link-to-black-history" href="/too-young-too-simple.html">黑历史</a><a id="nav-link-to-bbs" href="/bbs/">聊天版</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div id="main">
+		<div class="content">
+			<section class="align-center section-first-child">
+				<h2>聊天版</h2>
+				<p>来水点什么吧</p>
+			</section>
+			<section class="align-center middle-sections">
+				<a class="muut" href="https://muut.com/i/dimbox">dimbox forum</a> <script src="//cdn.muut.com/1/moot.zh.min.js" onload="removeMuutLogo()"></script>
+			</section>
+		</div>
+		<footer class="footer-cont">
+			<div class="footer section-last-child">
+				&copy; 版权所有 <script type="text/javascript">document.write((new Date()).getFullYear());</script> <a href="http://dimpurr.com/">钉子</a>和他的粉丝们<br />Operated by <a href="http://www.joyneop.com/">Joy Neop</a><br /><small class="not-important">Commit stamp: 16</small>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>
