@@ -44,7 +44,7 @@ header {
 
 	display: inline-block;
 	height: 42px;
-	padding: 11px 25px 0;
+	padding: 11px 18px 0;
 }
 .nav-links .page-now-on {
 	border-bottom: 1px solid #121212;
@@ -83,7 +83,7 @@ header p {
 }
 section {
 	max-width: 780px;
-	padding: 40px 0;
+	padding: 40px 15px;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -103,6 +103,9 @@ section {
 	background-position: bottom center;
 }
 section p {
+}
+section .not-important {
+	opacity: 0.35;
 }
 section.align-center h2 {
 	text-align: center;
