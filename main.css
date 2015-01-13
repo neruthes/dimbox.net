@@ -1,0 +1,153 @@
+@import url(/fonts/titillium-web.css);
+* {
+	box-sizing: border-box;
+}
+a, a:link, a:visited {
+	color: #2AF;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #2BF;
+	text-decoration: none;
+}
+/* ------------------------------------------- */
+body {
+	font-family: 'Titillium Web', 'Open Sans', 'Helvetica Neue', 'Helvetica Neue', Helvetica, 'Lucida Grande', Arial, 'Arial-Black', 'Arial Black', 'Arial Black', 'Hiragino Sans GB', 'Lantinghei SC', 'Lantinghei TC', 'Heiti SC', 'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #FAFAFA;
+	padding: 0;
+	margin: 0;
+	background: #303030;
+}
+header {
+	padding: 0;
+	margin: 0 auto;
+}
+.title-cont {
+}
+.title {
+	/*background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.24));*/
+	/*box-shadow: rgba(0, 0, 0, 0.67) 0 1px 3px 0;*/
+
+	height: 60px;
+}
+.title-inner {
+	max-width: 780px;
+	margin: 0 auto;
+}
+.nav-links, .nav-links a {
+	display: block;
+	float: left;
+}
+.nav-links {
+	font-weight: 200;
+	text-align: left;
+
+	float: right;
+	padding: 0;
+	margin: 0;
+}
+.nav-links a {
+	font-size: 14px;
+
+	height: 42px;
+	padding: 11px 25px 0;
+}
+.title h1 > a, .nav-links a:link, .nav-links a:visited, .nav-links a:hover, .nav-links a:active {
+	color: #FFF;
+	text-decoration: none;
+}
+.nav-links a::before {
+}
+.nav-links a::after {
+	content: " \\n";
+}
+.nav-links a:hover {
+	background: rgba(0, 0, 0, 0.24);
+	box-shadow: rgba(0, 0, 0, 0.123) 0 1px 3px 0 inset;
+}
+header h1 {
+	font-size: 22px;
+	font-weight: 300;
+	text-align: center;
+
+	float: left;
+	padding: 4px 15px 0 0;
+	margin: 0;
+}
+header h1::before {
+	content: "# ";
+}
+header p {
+	line-height: 1.45em;
+	padding: 10px 0;
+}
+section {
+	max-width: 780px;
+	padding: 40px 0;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.middle-sections {
+	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 25%, #454545 25%, #454545 75%, rgba(0, 0, 0, 0) 75%) repeat-x top, -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 25%, #121212 25%, #121212 75%, rgba(0, 0, 0, 0) 75%) repeat-x bottom;
+	background-size: 14px 1px;
+	background-position: top center, bottom center;
+}
+.section-last-child {
+	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 25%, #454545 25%, #454545 75%, rgba(0, 0, 0, 0) 75%) repeat-x top;
+	background-size: 14px 1px;
+	background-position: top center;
+}
+.section-first-child {
+	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 25%, #121212 25%, #121212 75%, rgba(0, 0, 0, 0) 75%) repeat-x bottom;
+	background-size: 14px 1px;
+	background-position: bottom center;
+}
+section p {
+}
+section.align-center h2 {
+	text-align: center;
+}
+section.align-center p {
+	text-align: center;
+
+	max-width: 700px;
+	margin: 0 auto 1.5em;
+}
+section.align-center ul {
+	max-width: 660px;
+	margin: 0 auto 1.5em;
+}
+section p > code {
+	background: rgba(0, 0, 0, 0.12);
+	border-radius: 3px;
+	box-shadow: rgba(0, 0, 0, 0.55) 0 1px 2px 0 inset;
+
+	padding: 3px 4px;
+	margin: 0 2px;
+}
+section h2 {
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 42px;
+	color: #FFF;
+	text-transform: uppercase;
+	padding: 8px 0 0;
+	margin: 0 0 12px 0;
+}
+section h2:hover {
+}
+#nav {
+	text-align: center;
+}
+.footer-cont {
+	font-size: 14px;
+}
+.footer {
+	color: #FFF;
+
+	max-width: 780px;
+	padding: 2em 0;
+	margin: 0 auto;
+}
