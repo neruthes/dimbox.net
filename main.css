@@ -183,3 +183,6 @@ section h2:hover {
 	padding: 2em 15px;
 	margin: 0 auto;
 }
+.footer small {
+	font-size: 1em;
+}
