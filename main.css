@@ -64,10 +64,12 @@ header {
 	text-decoration: none;
 }
 .nav-links a::before {
+	content: "~/ ";
 }
 .nav-links a::after {
 	font-size: 0.75em;
-	content: " \\n";
+	/*content: " \\n";*/
+	
 }
 .nav-links a:hover {
 	background: rgba(0, 0, 0, 0.24);
@@ -118,6 +120,9 @@ section p {
 	opacity: 0.35;
 }
 section.align-center h2 {
+	text-align: center;
+}
+section.align-center h3 {
 	text-align: center;
 }
 section.align-center p {
