@@ -3,10 +3,8 @@
 	var currentPage = window.location.pathname;
 	var nav = document.getElementsByClassName('nav-links')[0].getElementsByTagName('a');
 	for (var i = 0; i < nav.length; i++) {
-		if (nav[i].href.match(currentPage).length > 0) {
-			if (nav[i].href.match(currentPage)[0]) {
-				nav[i].classList.add('page-now-on');
-			};
+		if (nav[i].href.match(currentPage)) {
+			nav[i].classList.add('page-now-on');
 		};
 	};
 })();
