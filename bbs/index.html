@@ -6,17 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- <base href="//dimbox.net/"></base> -->
 	<link rel="stylesheet" type="text/css" href="/main.css">
+	<link rel="stylesheet" type="text/css" href="/bbs.css">
 	<link rel="shortcut icon" href="/favicon.jpg">
 	<link rel="apple-touch-icon" href="/dimbox.png">
 	<script type="text/javascript">
 	var removeMuutLogo = function () {
-		window.setInterval(function(){
+		var i = 100000;
+		while (i-- > 0) {
 			try {
 				document.getElementById('moot-logo').remove();
 			} catch (e) {
 				return undefined;
 			}
-		}, 30);
+		}
 	};
 	</script>
 </head>
@@ -39,7 +41,7 @@
 				<h2>聊天版</h2>
 				<p>来水点什么吧</p>
 			</section>
-			<section class="align-center middle-sections">
+			<section class="align-center middle-sections horizontal-paddingless">
 				<a class="muut" href="https://muut.com/i/dimbox" style="display:block;text-align:center;">Loading...</a> <script src="//cdn.muut.com/1/moot.zh.min.js" onload="removeMuutLogo()"></script>
 			</section>
 		</div>
