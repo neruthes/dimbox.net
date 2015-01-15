@@ -3,7 +3,9 @@
 	var commitStamp = new XMLHttpRequest();
 	commitStamp.open('GET', '/commit-stamp.txt', false);
 	commitStamp.send();
-	document.getElementById('commit-stamp').innerHTML = 'Commit stamp: ' + commitStamp.responseText;
+	if (document.getElementById('commit-stamp')) {
+		document.getElementById('commit-stamp').innerHTML = 'Commit stamp: ' + commitStamp.responseText;
+	};
 })();
 
 // Indicate current location on nav bar
