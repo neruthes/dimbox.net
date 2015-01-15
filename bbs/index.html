@@ -10,15 +10,34 @@
 	<link rel="shortcut icon" href="/favicon.jpg">
 	<link rel="apple-touch-icon" href="/dimbox.png">
 	<script type="text/javascript">
-	var removeMuutLogo = function () {
-		var i = 100000;
-		while (i-- > 0) {
+	/*var removeMuutLogo = function () {
+		window.lop = window.setInterval(function(){
 			try {
-				document.getElementById('moot-logo').remove();
+				if (document.getElementsByClasName('m-list')) {
+					window.setTimeout(function(){
+						document.getElementById('moot-logo').remove();
+					}, 80);
+				};
 			} catch (e) {
-				return undefined;
-			}
-		}
+				window.setTimeout(function(){
+					window.clearInterval(lop);
+				}, 80000);
+			};
+		}, 9);
+	};*/
+	var removeMuutLogo = function () {
+		// while ( !( document.getElementById('moot-logo') || document.getElementsByClassName('m-list') ) ) {
+			while (document.getElementById('moot-logo') && document.getElementsByClassName('m-list')) {
+				console.log('run');
+				if (document.getElementById('moot-logo')) {
+					document.getElementById('moot-logo').remove();
+					break;
+				};
+			};
+			if (!document.getElementById('moot-logo') && document.getElementsByClassName('m-list')) {
+				// break;
+			};
+		// };
 	};
 	</script>
 </head>
@@ -47,7 +66,7 @@
 		</div>
 		<footer class="footer-cont">
 			<div class="footer section-last-child">
-				&copy; 版权所有 <script type="text/javascript">document.write((new Date()).getFullYear());</script> <a href="http://dimpurr.com/">钉子</a>和他的粉丝们<br />Operated by <a href="http://www.joyneop.com/">Joy Neop</a><br /><small class="not-important">Commit stamp: 16</small>
+				&copy; 版权所有 <script type="text/javascript">document.write((new Date()).getFullYear());</script> <a href="http://dimpurr.com/">钉子</a>和他的粉丝们<br />Operated by <a href="http://www.joyneop.com/">Joy Neop</a><br /><small class="not-important" id="commit-stamp"></small>
 			</div>
 		</footer>
 	</div>
