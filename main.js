@@ -1,3 +1,11 @@
+// Show commit stamp
+(function () {
+	var commitStamp = new XMLHttpRequest();
+	commitStamp.open('GET', 'commit-stamp.txt', false);
+	commitStamp.send();
+	document.getElementById('commit-stamp').innerHTML = 'Commit stamp: ' + commitStamp.responseText;
+})();
+
 // Indicate current location on nav bar
 (function () {
 	var currentPage = window.location.pathname;
@@ -8,12 +16,4 @@
 			break;
 		};
 	};
-})();
-
-// Show commit stamp
-(function () {
-	var commitStamp = new XMLHttpRequest();
-	commitStamp.open('GET', 'commit-stamp.txt', false);
-	commitStamp.send();
-	document.getElementById('commit-stamp').innerHTML = 'Commit stamp: ' + commitStamp.responseText;
 })();
