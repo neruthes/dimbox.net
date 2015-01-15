@@ -10,34 +10,21 @@
 	<link rel="shortcut icon" href="/favicon.jpg">
 	<link rel="apple-touch-icon" href="/dimbox.png">
 	<script type="text/javascript">
-	/*var removeMuutLogo = function () {
-		window.lop = window.setInterval(function(){
-			try {
-				if (document.getElementsByClasName('m-list')) {
-					window.setTimeout(function(){
-						document.getElementById('moot-logo').remove();
-					}, 80);
-				};
-			} catch (e) {
-				window.setTimeout(function(){
-					window.clearInterval(lop);
-				}, 80000);
-			};
-		}, 9);
-	};*/
 	var removeMuutLogo = function () {
-		// while ( !( document.getElementById('moot-logo') || document.getElementsByClassName('m-list') ) ) {
-			while (document.getElementById('moot-logo') && document.getElementsByClassName('m-list')) {
-				console.log('run');
-				if (document.getElementById('moot-logo')) {
-					document.getElementById('moot-logo').remove();
-					break;
-				};
+		window.lop0 = window.setInterval(function(){
+			try {
+				document.getElementById('moot-logo').remove();
+			} catch (e) {
+				window.lop1 = window.setInterval(function(){
+					if (!document.getElementById('moot-logo') && document.getElementsByClassName('m-list')) {
+						window.setTimeout(function(){
+							window.clearInterval(lop1);
+							window.clearInterval(lop0);
+						}, 10000);
+					};
+				}, 100);
 			};
-			if (!document.getElementById('moot-logo') && document.getElementsByClassName('m-list')) {
-				// break;
-			};
-		// };
+		}, 100);
 	};
 	</script>
 </head>
