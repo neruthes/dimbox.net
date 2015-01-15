@@ -1,7 +1,7 @@
 // Show commit stamp
 (function () {
 	var commitStamp = new XMLHttpRequest();
-	commitStamp.open('GET', 'commit-stamp.txt', false);
+	commitStamp.open('GET', '/commit-stamp.txt', false);
 	commitStamp.send();
 	document.getElementById('commit-stamp').innerHTML = 'Commit stamp: ' + commitStamp.responseText;
 })();
