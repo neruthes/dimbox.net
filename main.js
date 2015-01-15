@@ -5,6 +5,7 @@
 	for (var i = 0; i < nav.length; i++) {
 		if (nav[i].href.match(currentPage)) {
 			nav[i].classList.add('page-now-on');
+			break;
 		};
 	};
 })();
