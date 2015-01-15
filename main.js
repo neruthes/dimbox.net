@@ -3,7 +3,7 @@
 	var currentPage = window.location.pathname;
 	var nav = document.getElementsByClassName('nav-links').getElementsByTagName('a');
 	for (var i = 0; i < nav.length; i++) {
-		if (nav[i] == currentPage) {
+		if (nav[i].href == currentPage) {
 			nav[i].classList.add('page-now-on');
 			break;
 		};
