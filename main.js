@@ -1,7 +1,7 @@
 // Indicate current location on nav bar
 (function () {
 	var currentPage = window.location.pathname;
-	var nav = document.getElementsByClassName('nav-links').getElementsByTagName('a');
+	var nav = document.getElementsByClassName('nav-links')[0].getElementsByTagName('a');
 	for (var i = 0; i < nav.length; i++) {
 		if (nav[i].href == currentPage) {
 			nav[i].classList.add('page-now-on');
