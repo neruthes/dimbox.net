@@ -4,7 +4,7 @@
 	commitStamp.open('GET', '/commit-stamp.txt', false);
 	commitStamp.send();
 	if (document.getElementById('commit-stamp')) {
-		document.getElementById('commit-stamp').innerHTML = 'Commit stamp: ' + commitStamp.responseText;
+		document.getElementById('commit-stamp').innerHTML = '|&nbsp; Commit stamp: ' + commitStamp.responseText;
 	};
 })();
 
