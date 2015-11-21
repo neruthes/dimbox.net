@@ -1,7 +1,7 @@
 // Show commit stamp
 (function () {
 	if (document.getElementById('commit-stamp')) {
-		document.getElementById('commit-stamp').innerHTML = '| Commit stamp: 49';
+		document.getElementById('commit-stamp').innerHTML = '| Commit stamp: 50';
 	};
 })();
 

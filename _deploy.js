@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-var currentCommitStamp = Number(fs.readFileSync('commit-stamp.txt').toString())+1;
+var currentCommitStamp = Number(fs.readFileSync('commit-stamp.txt').toString().trim())+1;
 
 fs.writeFileSync('commit-stamp.txt', currentCommitStamp);
 
