@@ -1,10 +1,7 @@
 // Show commit stamp
 (function () {
-	var commitStamp = new XMLHttpRequest();
-	commitStamp.open('GET', '/commit-stamp.txt', false);
-	commitStamp.send();
 	if (document.getElementById('commit-stamp')) {
-		document.getElementById('commit-stamp').innerHTML = '| Commit stamp: ' + commitStamp.responseText;
+		document.getElementById('commit-stamp').innerHTML = '| Commit stamp: 49';
 	};
 })();
 
