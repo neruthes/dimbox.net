@@ -5,5 +5,9 @@
 }
 
 .m-wrap * {
-	color: inherit;
+	color: inherit !important;
+}
+
+.m-wrap a {
+	color: #2AF !important;
 }
