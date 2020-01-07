@@ -1,4 +1,9 @@
 .m-wrap {
+	color: #FFF;
 	max-width: 100%;
 	margin: 0 !important;
+}
+
+.m-wrap * {
+	color: inherit;
 }
